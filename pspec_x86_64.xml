@@ -1,0 +1,71 @@
+<PISI>
+    <Source>
+        <Name>nuvolaplayer</Name>
+        <Packager>
+            <Name>Stefan Ric</Name>
+            <Email>stfric369@gmail.com</Email>
+        </Packager>
+        <License>BSD-2-Clause</License>
+        <PartOf>desktop.multimedia</PartOf>
+        <Summary xml:lang="en">Cloud music integration for your desktop</Summary>
+        <Description xml:lang="en">Nuvola Player is a runtime for web-based music streaming services providing more native user experience and integration with Linux desktop environments than usual web browsers can offer. It tries to feel and look like a native application as possible.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>nuvolaplayer</Name>
+        <Summary xml:lang="en">Cloud music integration for your desktop</Summary>
+        <Description xml:lang="en">Nuvola Player is a runtime for web-based music streaming services providing more native user experience and integration with Linux desktop environments than usual web browsers can offer. It tries to feel and look like a native application as possible.
+</Description>
+        <PartOf>desktop.multimedia</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/lib*.so</Path>
+            <Path fileType="library">/usr/lib/nuvolaplayer3/apprunner</Path>
+            <Path fileType="library">/usr/lib/nuvolaplayer3/libnuvolaplayer3-worker.so</Path>
+            <Path fileType="data">/usr/share/appdata/nuvolaplayer3.appdata.xml</Path>
+            <Path fileType="data">/usr/share/applications/nuvolaplayer3.desktop</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/nuvolaplayer3.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/nuvolaplayer3.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/nuvolaplayer3.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/nuvolaplayer3.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/nuvolaplayer3.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/nuvolaplayer3.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/nuvolaplayer3.svg</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/audio/audiotest.mp3</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/js/flash_detect.js</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/js/main.js</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/LICENSE</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/Makefile</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/home.html</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/integrate.js</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/metadata.json</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/src/icon.svg</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/webcomponents.js</Path>
+            <Path fileType="data">/usr/share/nuvolaplayer3/web_apps/test/webcomponents2.js</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>nuvolaplayer-devel</Name>
+        <Summary xml:lang="en">Development files for nuvolaplayer</Summary>
+        <Description xml:lang="en">Nuvola Player is a runtime for web-based music streaming services providing more native user experience and integration with Linux desktop environments than usual web browsers can offer. It tries to feel and look like a native application as possible.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">nuvolaplayer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="data">/usr/share/vala*/vapi/*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-05-26</Date>
+            <Version>3.0.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Stefan Ric</Name>
+            <Email>stfric369@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

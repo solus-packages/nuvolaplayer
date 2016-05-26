@@ -1,0 +1,34 @@
+name       : nuvolaplayer
+version    : 3.0.2
+release    : 1
+source     :
+    - https://github.com/tiliado/nuvolaplayer/archive/3.0.2.tar.gz : 0ba442b06df7df58f6fbaaa36be905d49fef079254bf923e6a80a54ea4bd6df6
+license    : BSD-2-Clause
+component  : desktop.multimedia
+summary    : Cloud music integration for your desktop
+description: |
+    Nuvola Player is a runtime for web-based music streaming services providing more native user experience and integration with Linux desktop environments than usual web browsers can offer. It tries to feel and look like a native application as possible.
+libsplit   : no
+builddeps  :
+    - pkgconfig(dioritegtk-0.2)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(gstreamer-1.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(javascriptcoregtk-4.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libarchive)
+    - pkgconfig(libnotify)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(python-2.7)
+    - pkgconfig(vapigen)
+    - pkgconfig(webkit2gtk-3.0)
+    - pkgconfig(webkit2gtk-4.0)
+rundeps    :
+    - flash-player-nonfree
+setup      : |
+    CFLAGS="${CFLAGS} -I/usr/include/diorite-1.0"
+    ./waf configure --prefix=/usr
+build      : |
+    ./waf build
+install    : |
+    ./waf install --no-system-hooks --destdir=$installdir
