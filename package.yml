@@ -23,11 +23,12 @@ builddeps  :
     - pkgconfig(vapigen)
     - pkgconfig(webkit2gtk-3.0)
     - pkgconfig(webkit2gtk-4.0)
+    - vala
 rundeps    :
     - flash-player-nonfree
 setup      : |
     CFLAGS="${CFLAGS} -I/usr/include/diorite-1.0"
-    ./waf configure --prefix=/usr
+    ./waf configure --prefix=/usr --libdir=%libdir%
 build      : |
     ./waf build
 install    : |

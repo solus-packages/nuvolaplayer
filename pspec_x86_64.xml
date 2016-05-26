@@ -2,8 +2,8 @@
     <Source>
         <Name>nuvolaplayer</Name>
         <Packager>
-            <Name>Stefan Ric</Name>
-            <Email>stfric369@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>BSD-2-Clause</License>
         <PartOf>desktop.multimedia</PartOf>
@@ -20,9 +20,9 @@
         <PartOf>desktop.multimedia</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
-            <Path fileType="library">/usr/lib/nuvolaplayer3/apprunner</Path>
-            <Path fileType="library">/usr/lib/nuvolaplayer3/libnuvolaplayer3-worker.so</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="library">/usr/lib64/nuvolaplayer3/apprunner</Path>
+            <Path fileType="library">/usr/lib64/nuvolaplayer3/libnuvolaplayer3-worker.so</Path>
             <Path fileType="data">/usr/share/appdata/nuvolaplayer3.appdata.xml</Path>
             <Path fileType="data">/usr/share/applications/nuvolaplayer3.desktop</Path>
             <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/nuvolaplayer3.png</Path>
@@ -64,8 +64,8 @@
             <Date>2016-05-26</Date>
             <Version>3.0.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Stefan Ric</Name>
-            <Email>stfric369@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
