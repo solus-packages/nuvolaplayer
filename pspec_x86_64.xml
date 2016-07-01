@@ -6,7 +6,7 @@
             <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>BSD-2-Clause</License>
-        <PartOf>desktop.multimedia</PartOf>
+        <PartOf>multimedia.audio</PartOf>
         <Summary xml:lang="en">Cloud music integration for your desktop</Summary>
         <Description xml:lang="en">Nuvola Player is a runtime for web-based music streaming services providing more native user experience and integration with Linux desktop environments than usual web browsers can offer. It tries to feel and look like a native application as possible.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Cloud music integration for your desktop</Summary>
         <Description xml:lang="en">Nuvola Player is a runtime for web-based music streaming services providing more native user experience and integration with Linux desktop environments than usual web browsers can offer. It tries to feel and look like a native application as possible.
 </Description>
-        <PartOf>desktop.multimedia</PartOf>
+        <PartOf>multimedia.audio</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib64/lib*.so</Path>
@@ -52,7 +52,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">nuvolaplayer</Dependency>
+            <Dependency release="2">nuvolaplayer</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -60,9 +60,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2016-05-26</Date>
-            <Version>3.0.2</Version>
+        <Update release="2">
+            <Date>2016-07-01</Date>
+            <Version>3.0.3</Version>
             <Comment>Packaging update</Comment>
             <Name>Joshua Strobl</Name>
             <Email>joshua@stroblindustries.com</Email>

@@ -1,10 +1,10 @@
 name       : nuvolaplayer
-version    : 3.0.2
-release    : 1
+version    : 3.0.3
+release    : 2
 source     :
-    - https://github.com/tiliado/nuvolaplayer/archive/3.0.2.tar.gz : 0ba442b06df7df58f6fbaaa36be905d49fef079254bf923e6a80a54ea4bd6df6
+    - https://github.com/tiliado/nuvolaplayer/archive/3.0.3.tar.gz : dd707dbfefe6eddca5edd9a824392c67c305a52919381de0e462281ae50a31b4
 license    : BSD-2-Clause
-component  : desktop.multimedia
+component  : multimedia.audio
 summary    : Cloud music integration for your desktop
 description: |
     Nuvola Player is a runtime for web-based music streaming services providing more native user experience and integration with Linux desktop environments than usual web browsers can offer. It tries to feel and look like a native application as possible.
