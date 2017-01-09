@@ -1,6 +1,6 @@
 name       : nuvolaplayer
 version    : 3.0.3
-release    : 2
+release    : 3
 source     :
     - https://github.com/tiliado/nuvolaplayer/archive/3.0.3.tar.gz : dd707dbfefe6eddca5edd9a824392c67c305a52919381de0e462281ae50a31b4
 license    : BSD-2-Clause
@@ -24,8 +24,6 @@ builddeps  :
     - pkgconfig(webkit2gtk-3.0)
     - pkgconfig(webkit2gtk-4.0)
     - vala
-rundeps    :
-    - flash-player-nonfree
 setup      : |
     CFLAGS="${CFLAGS} -I/usr/include/diorite-1.0"
     ./waf configure --prefix=/usr --libdir=%libdir%
