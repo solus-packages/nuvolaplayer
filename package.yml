@@ -1,6 +1,6 @@
 name       : nuvolaplayer
 version    : 3.0.4
-release    : 4
+release    : 5
 source     :
     - https://github.com/tiliado/nuvolaplayer/archive/3.0.4.tar.gz : 6577f96f305fd9a1d294c6f1a49b5d6a515dd42b026ce58ef89aeb19cd03349d
 license    : BSD-2-Clause
